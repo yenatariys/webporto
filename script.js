@@ -10,3 +10,10 @@ const themeToggle = document.getElementById("theme-toggle");
 themeToggle.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 });
+
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+});
