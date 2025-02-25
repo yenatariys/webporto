@@ -8,6 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #FFFAF3;
     color: #6C757D;
@@ -63,6 +67,7 @@ nav ul li a {
 /* Container */
 .container {
     width: 90%;
+    max-width: 1200px;
     margin: auto;
     padding: 50px 0;
 }
@@ -93,7 +98,7 @@ nav ul li a {
 
 .project:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeIn {
@@ -111,6 +116,11 @@ nav ul li a {
     display: none;
     font-size: 2rem;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
 }
 
 /* Dark Mode */
@@ -166,6 +176,7 @@ nav ul li a {
     background: #A8E6CF;
 }
 
+/* Footer */
 footer {
     background: #5E9C76;
     color: white;
@@ -176,6 +187,11 @@ footer {
 
 /* Responsiveness */
 @media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+        padding: 40px 20px;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
@@ -203,6 +219,7 @@ footer {
         width: 100%;
         padding: 10px;
         text-align: center;
+        transition: all 0.3s ease-in-out;
     }
 
     nav ul.show {
@@ -230,4 +247,4 @@ footer {
     .contact-form {
         max-width: 95%;
     }
-}
+    }
