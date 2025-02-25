@@ -1,19 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Website Portofolio Siap!");
-});
 
-function toggleMenu(){
-    document.querySelector(".nav-links ul").classList.toggle("show");
-}
+    // Menu Toggle (Pastikan elemen ada sebelum akses)
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
 
-const themeToggle = document.getElementById("theme-toggle");
-themeToggle.addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-});
+    if (menuToggle && nav) {
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        });
+    }
 
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav ul');
-
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('show');
+    // Dark Mode Toggle (Pastikan elemen ada sebelum akses)
+    const themeToggle = document.getElementById("theme-toggle");
+    if (themeToggle) {
+        themeToggle.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+        });
+    }
 });
