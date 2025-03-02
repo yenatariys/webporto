@@ -1,4 +1,4 @@
-/* DITAMBAHKAN: Variable CSS untuk konsistensi warna */
+/* Variable CSS untuk konsistensi warna */
 :root {
     --primary-color: #4a6cfa;
     --secondary-color: #f9a826;
@@ -9,7 +9,6 @@
     --transition: all 0.3s ease;
 }
 
-/* DIUBAH: Reset yang lebih komprehensif */
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +23,7 @@ body {
     background-color: var(--light-color);
 }
 
-/* Styling a, ul, img yang lebih terstruktur */
+/* Styling a, ul, img */
 a {
     text-decoration: none;
     color: inherit;
@@ -39,7 +38,7 @@ img {
     height: auto;
 }
 
-/* Header styling yang ditingkatkan */
+/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -63,7 +62,7 @@ header {
     color: var(--primary-color);
 }
 
-/* Navigation styling yang ditingkatkan */
+/* Navigation styling */
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -213,8 +212,6 @@ header {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     animation: morph 8s ease-in-out infinite;
 }
-
-
 
 /* Keyframe animations */
 @keyframes morph {
@@ -477,7 +474,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* DITAMBAHKAN: Responsive Styles */
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
     .nav-links {
         position: fixed;
