@@ -129,6 +129,7 @@ header {
 .hero-text {
     flex: 1;
     animation: fadeIn 1s ease-in-out;
+    margin-bottom: 2rem;
 }
 
 .greeting {
