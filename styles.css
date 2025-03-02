@@ -508,15 +508,19 @@ footer {
         flex-direction: column-reverse;
         text-align: center;
     }
-
-    .description {
-        margin: 0 auto 2rem;
-    }
-
+    
+    .hero-text{
+        margin-bottom: 2rem;
+    
     .hero-buttons {
         justify-content: center;
     }
 
+/*     .description {
+        margin: 0 auto 2rem;
+    } */
+
+    
     .shape {
         width: 250px;
         height: 250px;
