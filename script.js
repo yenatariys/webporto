@@ -1,16 +1,16 @@
-// TIDAK DIUBAH: Mobile Navigation Toggle
+// Mobile Navigation Toggle
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 
-// TIDAK DIUBAH: Toggle Navigation
+// Toggle Navigation
 burger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     
-    // DITAMBAHKAN: Burger Animation
+    // Burger Animation
     burger.classList.toggle('toggle');
     
-    // DITAMBAHKAN: Animate Links
+    // Animate Links
     links.forEach((link, index) => {
         if (link.style.animation) {
             link.style.animation = '';
@@ -20,7 +20,7 @@ burger.addEventListener('click', () => {
     });
 });
 
-// DITAMBAHKAN: Add Active Class to Nav Links
+// Add Active Class to Nav Links
 const currentLocation = location.href;
 const menuItems = document.querySelectorAll('.nav-links a');
 
@@ -30,7 +30,7 @@ menuItems.forEach(item => {
     }
 });
 
-// DITAMBAHKAN: Scroll Animation
+// Scroll Animation
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0);
@@ -48,7 +48,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// DITAMBAHKAN: Add reveal class to elements for scroll animation
+// Add reveal class to elements for scroll animation
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         section.classList.add('reveal');
     });
     
-    // Add typing animation to hero text
+    // Typing animation to hero text
     if (document.querySelector('.hero')) {
         const greeting = document.querySelector('.greeting');
         const name = document.querySelector('.name');
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// DITAMBAHKAN: Add CSS for animations
+// Add CSS for animations
 const style = document.createElement('style');
 style.innerHTML = `
     .reveal {
