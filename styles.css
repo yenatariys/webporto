@@ -230,6 +230,8 @@ header {
 
 .about-text {
     flex: 1;
+    padding: 0 20px;
+    text-align: justify;
 }
 
 .about-text p {
@@ -237,6 +239,9 @@ header {
     color: var(--gray-color);
     line-height: 1.8;
     margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-text .highlight {
@@ -554,10 +559,13 @@ footer {
         height: 250px;
     }
 
-
     .about-content {
         flex-direction: column;
         text-align: center;
+    }
+
+    .about-text {
+        padding: 0 15px;
     }
 
     .about-text p {
@@ -588,6 +596,10 @@ footer {
         width: 100%;
     }
 
+    .about-text{
+        padding: 0 10px;
+    }
+    
     .about-text p {
         font-size: 0.95rem;
     }
