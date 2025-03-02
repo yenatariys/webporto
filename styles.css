@@ -213,6 +213,37 @@ header {
     animation: morph 8s ease-in-out infinite;
 }
 
+/* About Section */
+.about {
+    padding: 5rem 5%
+    background-color: white;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--gray-color);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-text .highlight {
+    color: var(--primary-color);
+    font-weight:600;
+}
+    
 /* Keyframe animations */
 @keyframes morph {
     0% {
@@ -523,6 +554,16 @@ footer {
         height: 250px;
     }
 
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+        
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -545,5 +586,9 @@ footer {
 
     .nav-links {
         width: 100%;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
     }
 }
