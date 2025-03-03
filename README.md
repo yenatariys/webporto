@@ -1,13 +1,10 @@
 ## 🔗 Web Portofolio
-# Mini project based Internship - Web Development - Luar Sekolah
 
-Ini adalah web portofolio yang saya buat sebagai salah satu pemenuhan tugas dalam mengikuti Mini Project-Based Internship. Web ini berisi informasi tentang saya dan dokumentasi mengenai proyek yang telah saya buat dan kerjakan.
+Ini adalah web portofolio yang saya buat sebagai wadah untuk mendokumentasikan informasi tentang saya dan proyek yang telah saya buat dan kerjakan.
 
 ## 📌 Fitur
 * Tampilan responsif (mobile-friendly)
 * Section untuk menampilkan proyek yang telah saya buat
-* Form kontak
-* Dark mode
 
 ## Bahasa pemrograman yang digunakan
 * HTML untuk struktur website
