@@ -215,7 +215,7 @@ header {
 
 /* About Section */
 .about {
-    padding: 5rem 5%
+    padding: 5rem 5%;
     background-color: white;
 }
 
@@ -603,4 +603,5 @@ footer {
     .about-text p {
         font-size: 0.95rem;
     }
+}
 }
