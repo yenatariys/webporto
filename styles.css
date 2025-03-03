@@ -215,8 +215,9 @@ header {
 
 /* About Section */
 .about {
-    padding: 5rem 5%
+    padding: 5rem 5%;
     background-color: white;
+    /* Perubahan: Menambahkan titik koma yang hilang */
 }
 
 .about-content {
@@ -273,334 +274,28 @@ header {
     }
 }
 
-/* Skills Section */
-.skills {
-    padding: 5rem 5%;
-    background-color: white;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 3px;
-    background-color: var(--primary-color);
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.skills-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.skill-card {
-    flex: 1;
-    min-width: 250px;
-    max-width: 350px;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    transition: var(--transition);
-}
-
-.skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.skill-card i {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-}
-
-.skill-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.skill-card p {
-    color: var(--gray-color);
-}
-
-/* Featured Projects Section */
-.featured-projects {
-    padding: 5rem 5%;
-    background-color: #f8f9fa;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto 3rem;
-}
-
-.project-card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: var(--transition);
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.project-image {
-    height: 200px;
-    overflow: hidden;
-}
-
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition);
-}
-
-.project-card:hover .project-image img {
-    transform: scale(1.1);
-}
-
-.project-info {
-    padding: 1.5rem;
-}
-
-.project-info h3 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.project-info p {
-    color: var(--gray-color);
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-}
-
-.project-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.project-tags span {
-    background-color: rgba(74, 108, 250, 0.1);
-    color: var(--primary-color);
-    padding: 0.2rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-}
-
-.btn-small {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: var(--transition);
-}
-
-.btn-small:hover {
-    background-color: var(--hover-color);
-}
-
-.see-more {
-    text-align: center;
-}
-
-/* Footer */
-footer {
-    background-color: var(--dark-color);
-    color: white;
-    padding: 4rem 5% 2rem;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto 2rem;
-}
-
-.footer-logo h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.footer-logo span {
-    color: var(--secondary-color);
-}
-
-.footer-logo p {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.social-links a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    background-color: var(--primary-color);
-    transform: translateY(-5px);
-}
-
-.social-links i {
-    font-size: 1.2rem;
-}
-
-.footer-nav {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.footer-nav a {
-    color: rgba(255, 255, 255, 0.7);
-    transition: var(--transition);
-}
-
-.footer-nav a:hover {
-    color: white;
-}
-
-.copyright {
-    text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.9rem;
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        position: fixed;
-        right: 0;
-        top: 70px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        padding: 2rem 0;
-        gap: 1.5rem;
-    }
-
-    .nav-links.active {
-        transform: translateX(0);
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .hero-content {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    
-    .hero-text{
-        margin-bottom: 2rem;
-    
-    .hero-buttons {
-        justify-content: center;
-    }
-
-/*     .description {
-        margin: 0 auto 2rem;
-    } */
-
-    
-    .shape {
-        width: 250px;
-        height: 250px;
-    }
-
+/* Perubahan: Menambahkan responsivitas */
+@media (max-width: 768px) {
+    .hero-content,
     .about-content {
         flex-direction: column;
         text-align: center;
     }
 
-    .about-text {
-        padding: 0 15px;
+    .hero-buttons {
+        justify-content: center;
     }
 
-    .about-text p {
-        font-size: 1rem;
-    }
-        
-    .footer-content {
+    .skills-container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .name {
-        font-size: 2.5rem;
-    }
-
-    .title {
-        font-size: 1.2rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
     }
 
     .nav-links {
-        width: 100%;
+        display: none; /* Perubahan: Menyembunyikan menu di layar kecil */
     }
 
-    .about-text{
-        padding: 0 10px;
-    }
-    
-    .about-text p {
-        font-size: 0.95rem;
+    .burger {
+        display: block; /* Perubahan: Menampilkan burger menu */
     }
 }
